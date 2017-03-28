@@ -1,0 +1,10 @@
+Time to send one int:
+
+Number of iterations,   Time (seconds)
+10,                     1.298
+100,                    0.991
+1000,                   1.203
+10000,                  1.772
+100000,                 8.556
+1000000,                70.702
+
