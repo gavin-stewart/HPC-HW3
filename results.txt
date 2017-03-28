@@ -1,3 +1,7 @@
+All timings were obtained by running the programs on crunchy4, crunchy5, and 
+crunchy6 with 12 total cores.
+
+
 Time to send one int:
 
 Number of iterations,   Time (seconds)
@@ -8,3 +12,20 @@ Number of iterations,   Time (seconds)
 100000,                 8.556
 1000000,                70.702
 
+From the last row, I estimate that it takes about 
+(70.702 s / 1000000) ~ 7 microsends to send one integer through the CIMS 
+network.
+
+
+Time to send an 2Mb character array:
+
+Number of iterations,   Time (seconds)
+10,                     0.992
+100,                    1.020
+1000,                   1.696
+10000,                  8.159
+100000,                 73.561
+
+From the last row, I estimate that it takes about 
+(73.561 / 100000) ~ 7.3 microseconds to send 2Mb of data through the 
+CIMS network.
