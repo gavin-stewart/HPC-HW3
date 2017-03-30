@@ -2,7 +2,8 @@ All timings were obtained by running the programs on crunchy4, crunchy5, and
 crunchy6 with 12 total cores.
 
 
-Time to send one int:
+Time to send one int (obtained using the linux time utility):
+
 
 Number of iterations,   Time (seconds)
 10,                     1.298
@@ -17,7 +18,7 @@ From the last row, I estimate that it takes about
 network.
 
 
-Time to send an 2Mb character array:
+Time to send an 2Mb character array (obtained using the linux time utility):
 
 Number of iterations,   Time (seconds)
 10,                     0.992
@@ -28,4 +29,4 @@ Number of iterations,   Time (seconds)
 
 From the last row, I estimate that it takes about 
 (73.561 / 100000) ~ 7.3 microseconds to send 2Mb of data through the 
-CIMS network.
+CIMS network.  The bandwidth is 100000 * 2Mb / 73.561 sec ~ 21.8 GB/sec
